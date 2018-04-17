@@ -1,3 +1,7 @@
+if(!navigator.requestMIDIAccess){
+    alert('This app needs Google Chrome (WebMIDI) to work!')
+}
+
 var ma;
 var out;
 
