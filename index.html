@@ -1,0 +1,23 @@
+<html>
+    <script src="model_d.js"></script>
+    <h3>Behringer Model D settings</h3>
+    <div>
+        Multitrigger
+        <button onclick="send(multitrigger_on)">on</button>
+        <button onclick="send(multitrigger_off)">off</button>
+        </div>
+    <div>
+            Pitchbend (broken?)
+            <input type="range" min="0" max="12" value="0" onchange="sliderChangedFn(pitchbend,'pitchbend')(this)">
+            <span id="pitchbend">?</span>    
+    </div>
+    <div>
+            Note priority
+            <button onclick="priority(pri_low)">low</button>
+            <button onclick="priority(pri_high)">high</button>
+            <button onclick="priority(pri_last)">last</button>
+    </div>
+    <div>
+            <button onclick="initMA()">Request MIDI Access</button>
+    </div>
+    </html>
