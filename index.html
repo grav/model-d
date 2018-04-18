@@ -1,26 +1,38 @@
 <html>
-    <script src="model_d.js"></script>
-    <h3>Behringer Model D settings</h3>
-    <div>
+<script src="model_d.js"></script>
+<h3>Behringer Model D settings</h3>
+<div>
         Multitrigger
         <button onclick="send(multitrigger_on)">on</button>
         <button onclick="send(multitrigger_off)">off</button>
-        </div>
-    <div>
-            Pitchbend (broken?)
-            <input type="range" min="0" max="12" value="0" onchange="sliderChangedFn(pitchbend,'pitchbend')(this)">
-            <span id="pitchbend">?</span>    
-    </div>
-    <div>
-            Note priority
-            <button onclick="priority(pri_low)">low</button>
-            <button onclick="priority(pri_high)">high</button>
-            <button onclick="priority(pri_last)">last</button>
-    </div>
-    <div>
-            <button onclick="initMA()">Request MIDI Access</button>
-    </div>
-    <p>
+</div>
+<div>
+        Pitchbend (broken?)
+        <input type="range" min="0" max="12" value="0" onchange="sliderChangedFn(pitchbend,'pitchbend')(this)">
+        <span id="pitchbend">?</span>
+</div>
+<div>
+        MIDI channel
+        <input type="range" min="1" max="16" value="0" onchange="sliderChangedFn(midichannel,'midichannel')(this)">
+        <span id="midichannel">?</span>
+</div>
+<div>
+        Note priority
+        <button onclick="priority(0)">low</button>
+        <button onclick="priority(1)">high</button>
+        <button onclick="priority(2)">last</button>
+</div>
+<div>
+        Modulation curve
+        <button onclick="modulationCurve(0)">soft</button>
+        <button onclick="modulationCurve(1)">medium</button>
+        <button onclick="modulationCurve(2)">hard</button>
+</div>
+<div>
+        <button onclick="initMA()">Request MIDI Access</button>
+</div>
+<p>
         <a href='http://github.com/grav/model-d'>github</a>
-    </p>
-    </html>
+</p>
+
+</html>
