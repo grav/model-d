@@ -8,7 +8,7 @@
         <button onclick="send(multitrigger_off)">off</button>
 </div>
 <div>
-        Pitchbend (broken?)
+        Pitchbend*
         <input type="range" min="0" max="12" value="0" onchange="sliderChangedFn(pitchbend,'pitchbend')(this)">
         <span id="pitchbend">?</span>
 </div>
@@ -32,6 +32,9 @@
 <div>
         <button onclick="initMA()">Request MIDI Access</button>
 </div>
+<p>
+        *Pitchbend range <a href='https://forum.musictri.be/showthread.php?21620-Firmware-1-05-Pitch-Bend-range-bug&p=143246&viewfull=1#post143246'>is disabled</a> in firmware v1.0.5</a>
+</p>
 <p>
         <a href='http://github.com/grav/model-d'>github</a>
 </p>
