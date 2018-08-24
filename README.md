@@ -15,6 +15,5 @@ Just navigate to https://model-d.netlify.com to get started!
 ## Todo
 
 - Implement all features described in the sysex chapter of the [manual](https://medias.audiofanzine.com/files/behringer-model-d-user-manual-480240.pdf). 
-- Figure out why pitch bend range change does not work (maybe an update to [v1.05](http://www.musictri.be/Categories/Behringer/Keyboards/Synthesizers-and-Samplers/MODEL-D/p/P0CQJ/downloads) is needed?)
 - Display the (perceived) state of the device in the app
 - React to connect/disconnect of device

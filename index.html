@@ -3,12 +3,18 @@
 <script src="model_d.js"></script>
 <h3>Behringer Model D settings</h3>
 <div>
-        Multitrigger
-        <button onclick="send(multitrigger_on)">on</button>
+        Multitrigger<sup>1</sup>
+        <button onclick="send(multitrigger_on_old)">old mode</button>
+        <button onclick="send(multitrigger_on_new)">new mode</button>
         <button onclick="send(multitrigger_off)">off</button>
 </div>
 <div>
-        Pitchbend*
+        Pitchbend mode<sup>2</sup>
+        <button onclick="pitchbend_type(1)">settable</button>
+        <button onclick="pitchbend_type(0)">fixed</button>
+</div>
+<div>
+        Pitchbend range
         <input type="range" min="0" max="12" value="0" onchange="sliderChangedFn(pitchbend,'pitchbend')(this)">
         <span id="pitchbend">?</span>
 </div>
@@ -33,7 +39,12 @@
         <button onclick="initMA()">Request MIDI Access</button>
 </div>
 <p>
-        *Pitchbend range <a href='https://forum.musictri.be/showthread.php?21620-Firmware-1-05-Pitch-Bend-range-bug&p=143246&viewfull=1#post143246'>is disabled</a> in firmware v1.0.5</a>
+        1) Multitrigger "new" mode is available from v1.0.6.
+        <br>
+        2) Pitchbend range <a href='https://forum.musictri.be/showthread.php?21620-Firmware-1-05-Pitch-Bend-range-bug&p=143246&viewfull=1#post143246'>is disabled</a> in firmware v1.0.5</a>.
+        In v1.0.6 it can be set when using Pitchbend model "settable".
+        <br>
+        See <a href='http://downloads.music-group.com/software/ReleaseNotes/Model_D%20firmware%20update%20v1.0.6.pdf'>1.0.6 release notes</a> for more info.
 </p>
 <p>
         <a href='http://github.com/grav/model-d'>github</a>
